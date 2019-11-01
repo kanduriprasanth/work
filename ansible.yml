@@ -5,9 +5,9 @@
       raw: docker pull kanduriprasanth/work
 
     - name: delete the continer if present
-      raw: docker rm -f kanduriprasanth/work
+      raw: dockercontainer rm -f de
       ignore_errors: true
 
     - name: spin the container
-      raw: docker run --name nd -it -p 04:8080 kanduriprasanth/work
+      raw: docker run --name de -it -p 05:8080 kanduriprasanth/work
 ...
