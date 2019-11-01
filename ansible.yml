@@ -1,0 +1,13 @@
+---
+ - hosts: all
+   tasks:
+    - name: pull the image
+      raw: docker pull kanduriprasanth/work
+
+    - name: delete the continer if present
+      raw: docker rm -f kanduriprasanth/work
+      ignore_errors: true
+
+    - name: spin the container
+      raw: docker run --name tom -it -p 55:8080 kanduriprasanth/work
+...
