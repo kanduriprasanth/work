@@ -9,5 +9,5 @@
       ignore_errors: true
 
     - name: spin the container
-      raw: docker run --name prasa -dit -p 87:8080 kanduriprasanth/work
+      raw: docker run --name ka -dit -p 09:8080 kanduriprasanth/work
 ...
